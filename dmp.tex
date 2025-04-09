@@ -1,0 +1,197 @@
+% Intended LaTeX compiler: pdflatex
+\documentclass[12pt,onecolumn,notitlepage]{revtex4-1}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{mathpazo,amssymb}
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks=true}
+\begin{document}
+\author{A. Scemama, P.-F. Loos}
+\date{\today}
+\title{ERC PTEROSOR\\\medskip
+\large Data Management Plan}
+\hypersetup{
+ pdfauthor={A. Scemama, P.-F. Loos},
+ pdftitle={ERC PTEROSOR},
+ pdfkeywords={Software, Notebooks, Publications, Presentations},
+ pdfsubject={Org-mode document for \LaTeX{} export},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+
+\maketitle
+
+\section{Project details}
+\label{sec:org2420f0d}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Title                  & PTEROSOR\\
+Funder                 & European Research Council, ERC\\
+Number                 & 863481\\
+Principal Investigator & Pierre-Francois Loos\\
+ORCID iD               & 0000-0003-0598-7425\\
+Affiliation            & Laboratoire de Chimie et Physique Quantiques\\
+                       & (LCPQ) CNRS\\
+Data Contact Person    & Anthony Scemama\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Summary}
+
+Catalysis and solar cell technologies are underpinned by a fundamental
+process: that of exciting systems to a higher energy level than the
+ground state. Defining an effective method to achieve this that also
+provides accurate energies of the excited states is often a
+challenge. The EU-funded PTEROSOR project will tackle this fundamental
+problem using mathematical techniques. The researchers' novel approach
+for measuring the energies of excited states and defining wave
+functions in molecular systems will hinge on the use of a general
+class of Hamiltonians with parity-time (PT) symmetry. The gateway
+between ground and excited states will be provided by exceptional
+points which lie at the boundary between broken and unbroken
+PT-symmetric regions.
+
+
+\section{Research outputs}
+
+\begin{enumerate}
+\item QuAcK (Software)
+\item Quantum Package (Software)
+\item Notebooks (Interactive Resource)
+\item Textual data (Text)
+\end{enumerate}
+
+
+
+\section{Dataset summary}
+
+QuAcK is a small quantum chemistry package written in Fortran by the
+coordinator of the project. It is mostly used for prototyping.
+The size of the archive containing the source code is around 4MiB, and
+is composed of Fortran source files, Python and Bash scripts, and
+Makefiles.
+
+Quantum Package is an open-source quantum chemistry package for
+performing selected configuration interaction calculations with
+perturbation theory for molecules and solids.
+The project was initiated in 2015 at the LCPQ, and it is now
+developed on three sites : Toulouse (LCPQ Toulouse, France), Paris
+(LCT Paris, France) and Argonne (USA). Quantum Package is one of
+the flagship codes of the TREX European Center of Excellence.
+The size of the archive is around 11MiB, and is composed of IRPF90
+source files, Python, Bash scripts, Makefiles and standard atomic
+basis sets and pseudo-potentials.
+
+All along the project, Mathematica / Jupyter / Org-mode notebooks will
+be produced by researchers and students. Each notebook will take a
+few megabytes.
+
+PDF files for reports, publications, presentations and posters will
+be produced in this project. Each pdf file will take a few megabytes.
+Care will be taken to maintain the size of these documents as small
+as possible.
+
+
+
+
+\section{FAIR data and resources}
+
+\subsection{Making data findable}
+
+QuAcK is hosted on GitHub (\url{https://github.com/pfloos/quack}), with a
+mirror on the Git repository of the LCPQ
+(\url{https://git.irsamc.ups-tlse.fr/scemama/quack}). The latest
+version was uploaded on Zenodo (\url{doi:10.5281/zenodo.3745928}).
+
+Quantum Package is hosted on GitHub
+(\url{https://github.com/QuantumPackage/qp2}), with a mirror on the Git
+repository of the LCPQ (\url{https://git.irsamc.ups-tlse.fr/LCPQ/qp2}).
+The latest version of the program was presented in a \href{doi:10.1021/acs.jctc.9b00176}{peer-reviewed
+article}, and the corresponding preprint was published on \href{https://arxiv.org/abs/1902.08154}{ArXiv} and \href{https://hal.archives-ouvertes.fr/hal-02045595}{HAL}.
+The associated source code was uploaded on Zenodo
+(\url{doi:10.5281/zenodo.3677565}), and the source code contains a
+\texttt{CITATION.cff} file providing metadata in standard YAML format.
+Quantum Package has its dedicated website
+(\url{https://quantumpackage.github.io/qp2}) providing links to the
+GitHub repository, the documentation
+(\url{https://quantum-package.readthedocs.io}), and video tutorials
+hosted on a YouTube channel
+(\url{https://www.youtube.com/channel/UC3a7Yakg9gk36G3HKDIFaYw}). Quantum
+Package has also a twitter account (\texttt{@quantum\_package}).
+
+All the notebooks will be versioned in the Git repository of the LCPQ
+(\url{https://git.irsamc.ups-tlse.fr}), publicly accessible.
+These documents will be archived on Figshare or Zenodo, and the
+DOIs will be provided in publications.
+
+The \LaTeX{} source files relative to reports, publications,
+presentations and posters will be versioned in the Git repository
+of the LCPQ, publicly accessible.
+
+We plan to submit all the source codes involved in this project to
+the \href{https://www.softwareheritage.org}{Software Heritage} archive. 
+
+A web site for the project will be created, centralizing all the
+links to the archived data. Care will be taken to provide useful
+metadata in the HTML headers to help the search engines reference
+this web site.
+
+\subsection{Making data openly accessible}
+
+QuAcK is released under the GPL v3 license.
+Quantum Package is released under the AGPL v3 license.
+
+Both GitHub repositories are set up to automatically upload on
+Zenodo every new release. For each publication requiring a
+modification of the source code, a release will be made and the
+Zenodo DOI will be cited.
+
+The project doesn't require any part of the codes to be confidential.
+
+\subsection{Making data interoperable}
+
+Standard \texttt{xyz} format is used for atomic coordinates and \texttt{GAMESS/US}
+format for atomic basis sets is used. The Basis Set Exchange (BSE)
+website (\url{https://www.basissetexchange.org}) provides data in this
+format.
+
+Quantum Package is already interfaced with multiple codes of the
+community (GAMESS, Molpro, Gaussian, QMCPack, QMC=Chem, \ldots{})
+
+QuAcK operates internally with text files, using the same
+conventions as Quantum Package. Hence, the two codes are
+compatible and easily interoperable.
+
+\subsection{Increase data reuse}
+
+Along the project, the code will be structured in independent
+inter-operating components to make easier the extraction of a
+particular feature of the package.
+
+Continuous integration will be set up to guarantee that the package is
+functional in the main branch. Developments will be made in a
+secondary development branch.
+
+\subsection{Allocation of resources and data security}
+
+The mirroring of the GitHub repository in the institute of the
+coordinator provides a backup of both QuAcK and Quantum Package.
+
+The automatic upload of new releases on Zenodo provides secure storage
+and long-term preservation of the source code.
+
+We also plan to upload the code in the Software Heritage digital
+archive.
+\end{document}
